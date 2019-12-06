@@ -6,7 +6,7 @@ trigger:
 pool:
   vmImage: 'vs2017-win2016'
  
- steps:
+ Steps:
   - script: md tools
   displayName: 'Create tools directory'
 
