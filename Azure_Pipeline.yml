@@ -16,8 +16,9 @@ steps:
     -OutFile tools\\nuget.exe
   displayName: 'Install Nuget Tools'
 
+
 - powershell: |
-  tools\\nuget.exe install Microsoft.CrmSdk.CoreTools -O tools
+    tools\\nuget.exe install Microsoft.CrmSdk.CoreTools -O tools
     md "tools\\CoreTools"
     $coreToolsFolder = Get-ChildItem tools | Where-Object {$_.Name -match 'Microsoft.CrmSdk.CoreTools.'}
     move "tools\\$coreToolsFolder\\content\\bin\\coretools\\*.*" "tools\\CoreTools"
