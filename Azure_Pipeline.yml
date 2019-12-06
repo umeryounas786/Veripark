@@ -13,7 +13,7 @@ steps:
 
 - powershell: |
     Invoke-WebRequest '
-    -Uri https://dist.nuget.org/win-x86-commandline/latest/nuget.exe '
+    -URI "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" '
     -OutFile tools\\nuget.exe
   displayName: 'Install Nuget Tools'
 
