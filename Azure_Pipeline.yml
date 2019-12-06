@@ -4,7 +4,8 @@ trigger:
 - master
 
 pool:
-  vmImage: 'vs2017-win2016'
+ # vmImage: 'vs2017-win2016'
+  name: Default
 
 steps:
 - script: md tools
