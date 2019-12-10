@@ -8,7 +8,14 @@ pool:
   name: Default
 
 steps:
+- script: md tools
+  displayName: 'Create tools directory'
 
+- powershell: |
+    Invoke-WebRequest `
+      -Uri https://dist.nuget.org/win-x86-commandline/latest/nuget.exe `
+      -OutFile tools\\nuget.exe
+  displayName: 'Download nuget.exe'
 
 
 - powershell: |
