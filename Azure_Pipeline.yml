@@ -32,3 +32,5 @@ steps:
     SolutionPath: $(solution.path)
     SolutionName: $(solution.name)
   displayName: 'Solution Packager: pack solution'
+
+  
