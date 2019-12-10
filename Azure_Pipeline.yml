@@ -45,6 +45,7 @@ steps:
     pathtoPublish: $(Build.ArtifactStagingDirectory)
     artifactName: drop
   displayName: 'Publish build artifacts'
+  
 - powershell: Install-Module Microsoft.Xrm.Data.Powershell -Scope CurrentUser -Force
   displayName: 'Install Microsoft.Xrm.Data.PowerShell'
 
