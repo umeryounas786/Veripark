@@ -33,4 +33,8 @@ steps:
     SolutionName: $(solution.name)
   displayName: 'Solution Packager: pack solution'
 
-  
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: drop
+  displayName: 'Publish build artifacts'
