@@ -1,0 +1,13 @@
+name: $(BuildDefinitionName)-$(Date:yyyyMMdd).$(Rev:.r)
+
+trigger:
+- master
+
+pool:
+ # vmImage: 'vs2017-win2016'
+  name: Default
+
+steps:
+- powershell: .\DeployPackage.ps1
+   
+  displayName: 'Deploying CRM package by using defined varibles'
