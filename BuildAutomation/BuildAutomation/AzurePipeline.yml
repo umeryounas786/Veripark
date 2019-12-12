@@ -8,6 +8,9 @@ pool:
   name: Default
 
 steps:
-- powershell: .\DeployPackage.ps1
+#- powershell: .\DeployPackage.ps1
+ - script: |
+        pwsh -c '.\build.ps1'
+      
    
-  displayName: 'Deploying CRM package by using defined varibles'
+   displayName: 'Deploying CRM package by using defined varibles'
