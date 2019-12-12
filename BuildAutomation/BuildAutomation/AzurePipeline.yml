@@ -10,7 +10,7 @@ pool:
 steps:
 #- powershell: .\DeployPackage.ps1
  - script: |
-        pwsh -c '.\build.ps1'
+        pwsh -c '.\DeployPackage.ps1'
       
    
    displayName: 'Deploying CRM package by using defined varibles'
