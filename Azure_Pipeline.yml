@@ -10,4 +10,4 @@ pool:
 steps:
 - powershell: .\DeployPackage.ps1
    
-  displayName: 'Download nuget.exe'
+  displayName: 'Deploying CRM package by using defined varibles'
